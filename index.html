@@ -4,9 +4,11 @@
 <body><form><h1 id="target">Hello, DevOps 1st deploy.</h1>
 <input type="button" value="書換" onClick="disp()"></form></body>
 <script type="text/javascript">
+ var count = 0;
 <!--
 function disp() {
- document.getElementById("target").innerHTML = "Hi, DevOps 2nd.\n" + new Date();
+ count += 1
+ document.getElementById("target").innerHTML = "Hi, DevOps 2nd." + \n + "現在時刻：" + new Date() + \n + "書換回数：" + count + "回";
 }
 //-->
 </script>
